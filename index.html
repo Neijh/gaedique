@@ -5,51 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gaedique</title>
     <script src="https://kit.fontawesome.com/05bd8f82e6.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
 </head>
-<body>
+<body class="app-container">
     <header class="header">
         <nav class="navbar">
-            <div class="navbar_brand">
+            <div class="navbar_logo">
                 <p>Gaëdique <span>Guihal</span></p>
             </div>
-            <ul class="navbar_nav">
-                <li>Projets</li>
-                <li>À propos</li>
-                <li>Contact</li>
+            <ul class="navbar_link">
+                <li class="nav-text">Projets</li>
+                <li class="nav-text">À propos</li>
+                <li class="nav-text last">Contact</li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
-            <div>
-                <img src="./pictures/gaedique.webp" alt="photo de gaedique">
+    <main class="main_wrapper">
+        <section class="hero_wrapper">
+            <div class="hero-img">
+                <img src="./pictures/gae-hero.webp" alt="photo de gaedique" class="gaepic">
             </div>
-            <!-- <p>Bonjour!</p> -->
-            <h1><span>Enchantée!</span><br />
-                Gaëdique, front-end développeur.</h1>
+            <div class="hero_text">
+                <p class="hero_text-hello">Bonjour!</p>
+                <!-- <span class="h1_span">Bonjour!</span><br /> -->
+                <h1 class="hero_text-title">Gaëdique, front-end <span class="highlight">développeur</span>.</h1>
+                <p class="hero_text-localisation">En France</p>
+                <div class="hero-contact">
+                    <p><i class="fa-brands fa-linkedin"></i></p>
+                    <button>Email copié!</button>
+                </div>
+            </div>
         </section>
-        <section>
-            <p>Donner <span>vie</span> à vos site.</p>
-            <h2>Mes Projets</h2>
-            <div class="kasa">
-                <div class="kasa_img">
-                    <img src="./pictures/kasa.PNG" alt="Page d'accueil de Kasa">
+        <section class="projects-wrapper">
+            <p class="slogan">Je donne <span class="slogan_span highlight">vie</span> à vos sites.</p>
+            <h2>Mes Projets</h2><hr>
+            <div class="project_wrapper">
+                <div class="img_wrapper">
+                    <img src="./pictures/visuel-kasa.png" alt="Page d'accueil de Kasa" class="kasa_img project_img" />
                 </div>
-                <div class="kasa_describe">
-                    <h3>Créer une application web de location immobilière</h3>
-                    <p>Kasa</p>
-                    <div class="stack">
-                        <p>React</p>
-                        <p>Sass</p>
-                        <p>En voir plus <i class="fa-solid fa-arrow-right"></i></p>
+                <div class="project_describe">
+                    <h3>Kasa</h3>
+                    <p class="project_describe-text">Créer une application web de location immobilière</p>
+                    <div class="stack_wrapper">
+                        <p class="stack-icon"><i class="fa-brands fa-react"></i>React</p>
+                        <p class="stack-icon"><i class="fa-brands fa-sass"></i>Sass</p>
                     </div>
+                    <p>En voir plus <i class="fa-solid fa-arrow-right"></i></p>
                 </div>
             </div>
-            <div class="grimoire">
-                <div class="grimoire_img">
+            <div class="project_wrapper">
+                <div class="img_wrapper">
                     <img src="./pictures/mon-vieux-grimoire.PNG" alt="Page d'accueil de mon-vieux-grimoire">
                 </div>
-                <div class="grimoire_describe">
+                <div class="project_describe">
                     <h3>Implémenter une API pour un site de référencement de livres</h3>
                     <p>Mon vieux grimoire</p>
                     <div class="stack">
@@ -79,6 +90,7 @@
             <div>
                 <h3>Outils</h3>
                 <p>MongoDB</p>
+                <p>Figma</p>
             </div>
         </section>
         <footer>
