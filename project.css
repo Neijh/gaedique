@@ -26,14 +26,42 @@ a {
     padding: 0 15rem;
 }
 
+.icon_wrapper {
+    width: 2.8rem;
+    height: 2.8rem;
+    border: 1px solid #000;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color .3s cubic-bezier(.47, 0, .745, .715), background-color .3s cubic-bezier(.47, 0, .745, .715);
+
+}
+
+.icon_wrapper:hover {
+    color: #fff;
+    background-color: #ff285c;
+    border: #fff;
+}
+
+.fa-contact, .fa-brands {
+    font-size: 1.5rem;
+}
+
 /*********** Header ***********/
 
 .header {
-    border-bottom: 1px solid #000;
+    background-color: rgba(255, 255, 255, .6);
+    backdrop-filter: blur(40px);
+    position: sticky;
+    top: 1rem;
+    z-index: 100;
+    margin-top: 1rem;
+    padding: 0 1rem;
+    border-radius: 5rem;
 }
 
 .navbar {
-    /* padding: 20px 40px; */
     height: 50px;
     display: flex;
     justify-content: space-between;
@@ -62,7 +90,6 @@ a {
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    /* padding-left: 50px; */
 }
 
 .navbar_link .nav-text {
@@ -71,10 +98,7 @@ a {
 
 .navbar_link .last {
     padding-right: 0;
-    /* color: red; */
 }
-
-/*********** Main ***********/
 
 /*********** Introduction ***********/
 
@@ -121,12 +145,16 @@ a {
 
 .picture_wrapper {
     margin: 0 -20rem;
-    background-color: #f6f6f6;
+    background-color: #eeeaf0;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .picture_wrapper img {
-    display: flex;
-    justify-content: center;
+    object-fit: contain;
+    width: 30%;
 }
 
 /*********** Objectif ***********/
@@ -156,4 +184,46 @@ h3 {
     justify-content: space-between;
     margin-top: 5rem;
     font-weight: 700;
+}
+
+/*********** Contact section ***********/
+
+.footer {
+    background-color: #000;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    color: #fff;
+    margin: 0 -5rem;
+}
+
+.footer h2 {
+    font-size: 48px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 3rem;
+    color: #fff;
+}
+
+.contact_wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 5rem 5rem 5rem;
+}
+
+.footer-contact {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.footer-contact .icon_wrapper {
+    border: 1px solid #fff;
+}
+
+.allright {
+    color: #8C8C8C;
+}
+
+.fa-heart {
+    color: #ff285c;
 }
