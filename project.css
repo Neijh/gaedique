@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app-container {
+    margin: 0 auto;
+    /* max-width: 1440px; */
+    padding: 0 5rem;
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+    background-color: hsla(180, 1%, 97%, 1);
+    background-image: radial-gradient(at 81% 65%, hsla(218, 98%, 94%, 1) 0px, transparent 50%), radial-gradient(at 95% 99%, hsla(39, 95%, 94%, 1) 0px, transparent 50%), radial-gradient(at 48% 26%, hsla(271, 77%, 94%, 1) 0px, transparent 50%), radial-gradient(at 75% 26%, hsla(197, 87%, 94%, 1) 0px, transparent 50%);
+}
+
+/**** General ****/
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+}
+
+.main_wrapper {
+    padding: 0 15rem;
+}
+
+/*********** Header ***********/
+
+.header {
+    border-bottom: 1px solid #000;
+}
+
+.navbar {
+    /* padding: 20px 40px; */
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar_logo a {
+    text-transform: uppercase;
+    transition: color .3s cubic-bezier(.47, 0, .745, .715);
+}
+
+.navbar_logo a:hover {
+    color: #b010fb;
+}
+
+.nav-text a {
+    text-transform: uppercase;
+    transition: color .3s cubic-bezier(.47, 0, .745, .715);
+}
+
+.nav-text a:hover {
+    color: #b010fb;
+}
+
+.navbar_link {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    /* padding-left: 50px; */
+}
+
+.navbar_link .nav-text {
+    padding-right: 50px;
+}
+
+.navbar_link .last {
+    padding-right: 0;
+    /* color: red; */
+}
+
+/*********** Main ***********/
+
+/*********** Introduction ***********/
+
+.main_wrapper h1 {
+    font-size: 48px;
+    margin-top: 5rem;
+}
+
+.subtitle {
+    color: #8C8C8C;
+    font-size: 26px;
+    margin-bottom: 3rem;
+}
+
+.project-name {
+    color: #b010fb;
+    font-weight: 700;
+}
+
+.project-presentation {
+    margin-bottom: 2rem;
+}
+
+.introduction {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.introduction-subtitle {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.introduction-stack {
+    display: flex;
+    color: #8C8C8C;
+    list-style-type: none;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+/*********** Picture ***********/
+
+.picture_wrapper {
+    margin: 0 -20rem;
+    background-color: #f6f6f6;
+}
+
+.picture_wrapper img {
+    display: flex;
+    justify-content: center;
+}
+
+/*********** Objectif ***********/
+
+h2 {
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #b010fb;
+    margin-top: 3rem;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 1rem;
+}
+
+.margin {
+    margin-bottom: 1rem;
+}
+
+.highlight_span {
+    font-weight: 500;
+}
+
+.project_navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+    font-weight: 700;
+}
