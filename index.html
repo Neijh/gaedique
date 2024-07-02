@@ -25,18 +25,16 @@
     </header>
     <main class="main_wrapper">
         <section class="hero_wrapper">
-            <!-- <span class="hello">Bonjour!</span><br/> -->
             <p class="slogan">Je donne <span class="highlight">vie</span> à vos sites</p>
             <div class="hero-img">
                 <img src="./pictures/gae-hero.webp" alt="photo de gaedique" class="gaepic">
             </div>
             <div class="hero_text">
-                <!-- <p class="hero_text-hello">Bonjour!</p> -->
                 <h1 class="hero_text-title">Gaëdique, front-end <span class="highlight">développeur</span>.</h1>
                 <p class="hero_text-localisation">En France</p>
                 <div class="hero-contact">
                     <div class="icon_wrapper">
-                        <i class="fa-brands fa-linkedin-in"></i>
+                        <a href="https://www.linkedin.com/in/gaedique-guihal" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
                     </div>
                     <div class="icon_wrapper">
                         <i class="fa-contact fa-solid fa-envelope"></i>
@@ -48,79 +46,67 @@
             </div>
         </section>
         
-        <section>
-            <!-- <div class="line"></div> -->
+        <section class="project_section">
+            <div class="line-section"></div>
             <h2 id="go-to-projects">Mes Projets</h2>
-            <div class="project_wrapper">
-                <div class="text_wrapper">
-                    <p class="project_describe">01 - Coder une application web</p>
-                    <!-- <div class="title_wrapper">
-                        <div class="rond"></div> -->
-                        <h3 class="project_title">Kasa</h3>
-                    <!-- </div> -->
-                    <div class="project_describe-wrapper">
-                        <p class="project_describe-text">J'ai implémenté le front-end d'une application en utilisant <span class="stack-icon"><i class="fa-brands fa-react"></i>React</span> et <span class="stack-icon"><i class="fa-brands fa-sass"></i>Sass</span> pour créer une expérience utilisateur moderne et réactive.</p>
-                        <a href="./kasa-project.html" class="more_btn">En voir plus</a>
+            <div class="projects">
+                <div class="project_wrapper">
+                    <div class="text_wrapper">
+                        <p class="project_describe">01 - Coder une application web</p>
+                        <!-- <div class="title_wrapper">
+                            <div class="rond"></div> -->
+                            <h3 class="project_title">Kasa</h3>
+                        <!-- </div> -->
+                        <div class="project_describe-wrapper">
+                            <p class="project_describe-text">J'ai implémenté le front-end d'une application en utilisant <span class="stack-icon"><i class="fa-brands fa-react"></i>React</span> et <span class="stack-icon"><i class="fa-brands fa-sass"></i>Sass</span> pour créer une expérience utilisateur moderne et réactive.</p>
+                            <a href="./kasa-project.html" class="more_btn">En voir plus</a>
+                        </div>
+                    </div>
+                    <div class="img_wrapper nice_wrapper">
+                        <a href="./kasa-project.html"><img src="./pictures/visuel2-kasa.png" alt="Page d'accueil de Kasa" class="project_img" /></a>
                     </div>
                 </div>
-                <div class="img_wrapper nice_wrapper">
-                    <img src="./pictures/visuel-kasa.png" alt="Page d'accueil de Kasa" class="kasa_img project_img" />
-                </div>
-                <!-- <div class="text_wrapper">
-                    <div class="h3_wrapper">
-                        <div class="rond"></div>
-                        <h3>Kasa</h3>
+                <div class="project_wrapper">
+                    <div class="text_wrapper">
+                        <p class="project_describe">02 - Créer un serveur de données</p>
+                        <h3 class="project_title">Mon vieux grimoire</h3>
+                        <div class="project_describe-wrapper">
+                            <p class="project_describe-text">J'ai implémenté une API pour un site de référencement de livres en utilisant <span class="stack-icon"><i class="fa-brands fa-node-js"></i>Node.js</span> et Express pour stocker les données sur MongoDB.</p>
+                            <a href="./grimoire-project.html" class="more_btn">En voir plus</a>
+                        </div>
                     </div>
-                    <p class="project_describe">Coder une application web de location immobilière</p>
-                    <p class="project_describe-text">J'ai implémenté le front-end d'une application en utilisant <span class="stack-icon"><i class="fa-brands fa-react"></i>React</span> et <span class="stack-icon"><i class="fa-brands fa-sass"></i>Sass</span> pour créer une expérience utilisateur moderne et réactive.</p>
-                    <a href="./kasa-project.html" class="more_btn more_btn-project">En voir plus</a>
-                </div> -->
-            </div>
-            <div class="project_wrapper">
-                <div class="text_wrapper">
-                    <p class="project_describe">02 - Créer un serveur de données</p>
-                    <h3 class="project_title">Mon vieux grimoire</h3>
-                    <div class="project_describe-wrapper">
-                        <p class="project_describe-text">J'ai implémenté une API pour un site de référencement de livres en utilisant <span class="stack-icon"><i class="fa-brands fa-node-js"></i>Node.js</span> et <span class="stack-icon">Express</span> pour stocker les données sur <span class="stack-icon">MongoDB</span>.</p>
-                        <a href="./grimoire-project.html" class="more_btn">En voir plus</a>
-
+                    <div class="img_wrapper nice_wrapper img-right">
+                        <a href="./grimoire-project.html"><img src="./pictures/grimoire.png" alt="Page d'accueil de mon-vieux-grimoire" class="project_img"></a>
                     </div>
-                </div>
-                <div class="img_wrapper nice_wrapper img-right">
-                    <img src="./pictures/mon-vieux-grimoire.PNG" alt="Page d'accueil de mon-vieux-grimoire">
                 </div>
             </div>
         </section>
-        <section class="expertise">
-            <div class="background-grey"></div>
+        <section class="skill_section">
+            <div class="line-section"></div>
             <h2>Comment puis-je vous aider?</h2>
             <div class="stack_wrapper">
-                <!-- <div class="dev_wrapper"> -->
                     <div class="stack nice_wrapper">
                         <p><i class="expertise-icon fa-brands fa-react"></i></p>
                         <h4>Développement Web</h4>
                         <p>Je peux créer pour vous un site moderne, optimisé et responsive.</p>
-                        <div class="first-row-stack">
+                        <div class="row-stack">
                             <p class="stack-icon">React</p>
                             <p class="stack-icon">Javascript</p>
                             <p class="stack-icon">HTML</p>
                             <p class="stack-icon">CSS</p>
                             <p class="stack-icon">SASS</p>
                         </div>
-                        <!-- <div class="second-row-stack">
-                        </div> -->
                     </div>
                     <div class="stack backend nice_wrapper">
                         <p><i class="expertise-icon fa-solid fa-database"></i></p>
                         <h4>Développement Back-End</h4>
                         <p>Je peux vous créer une application complète avec un serveur de données sécurisé. Je prends en charge la gestion des données, garantissant leur sécurité et leur intégrité.</p>
-                        <div class="first-row-stack">
+                        <div class="row-stack">
                             <p class="stack-icon">Node.js</p>
                             <p class="stack-icon">Express</p>
                             <p class="stack-icon">MongoDB</p>
                         </div>
                     </div>
-                <!-- </div> -->
                     <div class="stack nice_wrapper">
                         <p><i class="expertise-icon fa-solid fa-medal"></i></p>
                         <h4>Applications Web de Qualité</h4>
@@ -128,7 +114,6 @@
                     </div>
                     <div class="stack nice_wrapper">
                         <p><i class="expertise-icon fa-solid fa-eye"></i></p>
-                        <!-- <p><i class="fa-regular fa-eye"></i></p> -->
                         <h4>Expérience Utilisateur & design</h4>
                         <p>Avec un oeil pour le design, je peux vous créer une expérience fluide et harmonieuse.</p>
                     </div>
@@ -140,30 +125,28 @@
                 </div>
                 
             </section>
-            <section class="about_wrapper">
+            <section class="about_section">
+                <div class="line-section"></div>
                 <h2>Pourquoi travailler avec moi</h2>
-                <!-- <div class="about_container">
-                    <div class="nice_wrapper soft-skill ">
-                        <h4>Soft Skills</h4>
-                        <p>Créativité</p>
-                        <p>Autonomie</p>
-                        <p>Flexibilité</p>
-                        <p>Communication</p>
-                        <p>Gestion du stress</p>
-                    </div> -->
                     <div class="about_text-btn">
-                        <p>Spécialisée en front-end, j'aime voir mes lignes de code se transformer en expériences visuelles harmonieuses et intuitives, apportant une touche créative à chaque projet.</p>
-                        <p class="about_text">Je suis le <span class="highlight">développeur</span> front-end derrière les interfaces avec lesquelles vous aimez interagir !</p>
-                        <a href="#" class="more_btn more_btn-about">Télécharger mon CV</a>
+                        <div class="about_img-text">
+                                <p>Spécialisée en front-end, j'aime voir mes lignes de code se transformer en expériences visuelles harmonieuses et intuitives, apportant une touche créative à chaque projet.<br>
+                                    Je suis le développeur front-end derrière les interfaces avec lesquelles vous aimez interagir !</p>
+                                <p>Graphiste de formation et anciennement hôtesse de l'air, je me suis reconvertie dans le développement web pour allier ma passion pour le code et mon amour du design.</p>
+                                <p>Mon ancienne fonction m'a permis de développer ma communication, diplomatie, flexibilité, gestion du stress, travail d'équipe et soucis de la clientèle.</p>
+                                <p>J'ai suivi ma formation de développeuse web en toute autonomie à distance avec OpenClassrooms, ce qui m'a permis d'acquérir des compétences solides en code, SEO et gestion de projets.</p>
+                                <p>Quand je ne code pas, je prends plaisir à feutrer, dessiner, lire des mangas ou me balader en forêt avec mon chien.</p>
+                                <p>Merci de vous être arrêté sur mon portfolio !</p>
+                        <h4>Soft Skills</h4>
+                        <div class="about_stack row-stack">
+                            <p class="stack-icon">Créativité</p>
+                            <p class="stack-icon">Autonomie</p>
+                            <p class="stack-icon">Flexibilité</p>
+                            <p class="stack-icon">Communication</p>
+                            <p class="stack-icon">Gestion du stress</p>
+                        </div>
+                        <a href="./data/gaedique-cv.pdf" download class="more_btn more_btn-about">Télécharger mon CV</a>
                     </div>
-                <!-- </div> -->
-
-            <!-- <p>Je suis le développeur front-end derrière les interfaces fluides et agréables avec lesquelles vous aimez interagir!</p>
-            <p>Je me suis reconvertie dans le développement web pour allier ma passion pour le code et mon amour du design.<br>
-                J'aime voir mes lignes de code se transformer en expériences visuelles harmonieuses et intuitives, apportant une touche créative à chaque projet.</p>
-            <p>J'ai suivi ma formation à distance avec OpenClassrooms, ce qui m'a permis d'acquérir des compétences solides en code, SEO et gestion de projets.</p>
-            <p>Quand je ne code pas, je prends plaisir à feutrer, dessiner et me balader en forêt avec mon chien.</p>
-            <p>Merci de vous être arrêté sur mon portfolio !</p> -->
         </section>
     </main>
     <footer class="footer">
@@ -175,7 +158,7 @@
             </div>
             <div class="footer-contact">
                 <div class="icon_wrapper">
-                    <i class="fa-brands fa-linkedin-in"></i>
+                    <a href="https://www.linkedin.com/in/gaedique-guihal" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
                 <div class="icon_wrapper">
                     <i class="fa-contact fa-solid fa-envelope"></i>
