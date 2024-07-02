@@ -220,6 +220,10 @@ h3 {
     border: 1px solid #fff;
 }
 
+.footer a {
+    color: #fff;
+}
+
 .allright {
     color: #8C8C8C;
 }

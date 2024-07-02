@@ -369,20 +369,18 @@ h4 {
     text-align: center;
 }
 
+.about_img-text p {
+    margin-bottom: 1rem;
+}
+
 .about_text-btn h4 {
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
 .about_stack {
     justify-content: center;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
-
-/* .soft-skill {
-    padding: 1rem;
-    width: 13%;
-    margin-right: 5rem;
-} */
 
 .about_text-btn a {
     margin-left: 0;
@@ -411,8 +409,12 @@ h4 {
     gap: 3rem;
 }
 
-.footer-contact .icon_wrapper {
+.footer-contact .icon_wrapper{
     border: 1px solid #fff;
+}
+
+.footer a {
+    color: #fff;
 }
 
 .allright {
@@ -421,10 +423,4 @@ h4 {
 
 .fa-heart {
     color: #ff285c;
-}
-
-/*********** About ***********/
-
-.presentation_section {
-    padding: 5rem 0;
 }
