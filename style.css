@@ -32,6 +32,8 @@ a {
     margin-top: 1rem;
     padding: 0 1rem;
     border-radius: 5rem;
+    width: 100%;
+    transition: width 0.3s ease;
 }
 
 .navbar {
@@ -71,6 +73,10 @@ a {
 
 .navbar_link .last {
     padding-right: 0;
+}
+
+label, #toggle {
+    display: none;
 }
 
 /*********** Main ***********/
@@ -122,13 +128,12 @@ h3 {
     margin: 0 -15rem;
 }
 
-/*********** Landing section ***********/
+/*********** Hero section ***********/
 
 .hero_wrapper {
-    height: 100vh;
     position: relative;
 /* A effacer si img retrécie */
-    margin-bottom: 10rem;
+    margin-bottom: 58rem;
 }
 
 .slogan {
@@ -145,7 +150,7 @@ h3 {
     transition: .3s;
     overflow: hidden;
     position: absolute;
-    bottom: -5rem;
+    top: 16rem;
 }
 
 .gaepic {
@@ -160,14 +165,9 @@ h3 {
 
 .hero_text {
     position: relative;
-    top: 38%;
-    left: 55%;
+    top: 24rem;
+    left: 50rem;
     width: 40%;
-}
-
-.hero_text-hello {
-    font-size: 36px;
-    padding-bottom: 2rem;
 }
 
 .hero_text-title {
@@ -244,9 +244,9 @@ h3 {
     flex-direction: column;
     gap: 5rem;
 }
+
 .project_wrapper {
     display: flex;
-    /* padding: 50px 0; */
 }
 
 .title_wrapper {
@@ -281,6 +281,7 @@ h3 {
     width: 40%;
     display: flex;
     flex-direction: column;
+    padding-bottom: 1.5rem;
 }
 
 .text_wrapper h3 {
@@ -288,7 +289,7 @@ h3 {
 }
 
 .project_describe {
-    margin-bottom: 10rem;
+    margin-bottom: 40%;
     text-transform: uppercase;
     font-size: 18px;
     color: rgb(116, 116, 116);
@@ -403,13 +404,13 @@ h4 {
     padding: 0 5rem 10rem 5rem;
 }
 
-.footer-contact {
+.footer-icon {
     display: flex;
     justify-content: center;
     gap: 3rem;
 }
 
-.footer-contact .icon_wrapper{
+.footer-icon .icon_wrapper{
     border: 1px solid #fff;
 }
 
@@ -423,4 +424,270 @@ h4 {
 
 .fa-heart {
     color: #ff285c;
+}
+
+/*********** Media queries ***********/
+
+/* Large devices (desktop, less/equal than 1440px) */
+@media (max-width: 1440px) {
+
+    .main_wrapper {
+        padding: 0 10rem;
+    }
+
+    /*********** Header ***********/
+
+    /*********** Hero section ***********/
+    .hero_wrapper {
+        margin-bottom: 47rem;
+    }
+
+    .slogan {
+        font-size: 66px;
+    }
+
+    .hero-img {
+        width: 500px;
+        top: 12rem;
+    }
+
+    .hero_text {
+        top: 19rem;
+        left: 38rem;
+    }
+
+    .hero_text-title {
+        font-size: 24px;
+    }
+
+    .hero_text-localisation {
+        font-size: 24px;
+    }
+    
+    /*********** Project section ***********/
+
+    .project_describe {
+        margin-bottom: 20%;
+    }
+}
+
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1024px) {
+
+    .app-container {
+        padding: 0 2.5rem;
+        font-size: 16px;
+    }
+
+    .main_wrapper {
+        padding: 0 3rem;
+    }
+
+    /*********** Hero section ***********/
+    .hero_wrapper {
+        margin-bottom: 38rem;
+    }
+
+    .slogan {
+        font-size: 52px;
+        margin-top: 5rem;
+    }
+
+    .hero-img {
+        width: 420px;
+    }
+
+    .hero_text {
+        top: 18rem;
+        left: 31rem;
+    }
+
+    .hero_text-title {
+        font-size: 21px;
+    }
+
+    .hero_text-localisation {
+        font-size: 21px;
+    }
+     
+
+    /*********** Footer section ***********/
+    .footer {
+        margin: 0 -2.5rem;
+    }
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+    .app-container {
+        padding: 0 1rem;
+    }
+
+    .main_wrapper {
+        padding: 0;
+    }
+
+    h2 {
+        padding-bottom: 3.5rem;
+    }
+
+    /*********** Header section ***********/
+    .navbar {
+        flex-direction: row-reverse;
+    }
+
+    .navbar_link {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, .6);
+        backdrop-filter: blur(40px);
+        align-items: center;
+        position: absolute;
+        top: 3.5rem;
+        right: 0;
+        border-radius: 20px;
+        z-index: 101;
+    }
+
+    .header:has(#toggle:checked) {
+        backdrop-filter: none;
+    }
+
+    .navbar_link .nav-text {
+        padding-right: 0;
+        padding: 1rem;
+    }
+    
+    label {
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+    
+    #toggle:checked ~ .navbar_link {
+        display: flex;
+    }
+
+    /*********** Hero section ***********/
+    .hero_wrapper {
+        margin-bottom: 39rem;
+    }
+
+    .slogan {
+        font-size: 2.5rem;
+        margin-top: 3rem;
+    }
+
+    .hero-img {
+        width: 95%;
+        top: 10rem;
+    }
+
+    .hero_text {
+        top: 36rem;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, 0);
+    }
+
+    .hero_text-title {
+        font-size: 21px;
+    }
+
+    .hero_text-localisation {
+        font-size: 21px;
+        text-align: center;
+        margin-top: 1.5rem;
+    }
+
+    .hero-contact {
+        /* margin-top: 1.5rem; */
+        display: none;
+    }
+
+    /*********** Projects section ***********/
+    .project_section {
+        margin-bottom: 5rem;
+    }
+
+    .project_wrapper {
+        flex-direction: column;
+    }
+    
+    .project_describe-wrapper {
+        width: 100%;
+    }
+
+    .project_describe {
+        margin-bottom: 12%;
+    }
+
+    .project_title {
+        margin-bottom: 0.7rem;
+    }
+
+    .project_describe-text {
+        margin-bottom: 3.5rem;
+    }
+
+    /* Peut être a mettre à 100% */
+    .text_wrapper {
+        width: 100%;
+    }
+
+    .img_wrapper {
+        width: 100%;
+        margin-top: 3.5rem;
+    }
+
+    /*********** Skill section ***********/
+    .skill_section {
+        margin-bottom: 5rem;
+    }
+
+    .stack_wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+    }
+    
+
+    /*********** About section ***********/
+    .about_stack {
+        flex-wrap: wrap;
+    }
+
+    .backend {
+        grid-column: 1;
+    }
+
+    .row-stack {
+        flex-wrap: wrap;
+    }
+
+    /*********** Footer section ***********/
+    .footer {
+        margin: 0 -1rem;
+    }
+
+    .contact_wrapper {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 0 5rem 0;
+    }
+
+    .copyright-allright {
+        order: 2;
+        margin-top: 2rem;
+        font-size: 14px;
+    }
+
+    .madewith {
+        order: 1;
+        margin-top: 3rem;
+    }
+
 }
