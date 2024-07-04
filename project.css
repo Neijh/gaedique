@@ -6,7 +6,6 @@
 
 .app-container {
     margin: 0 auto;
-    /* max-width: 1440px; */
     padding: 0 5rem;
     font-family: "Manrope", sans-serif;
     font-size: 18px;
@@ -59,6 +58,8 @@ a {
     margin-top: 1rem;
     padding: 0 1rem;
     border-radius: 5rem;
+    width: 100%;
+    transition: width 0.3s ease;
 }
 
 .navbar {
@@ -98,6 +99,10 @@ a {
 
 .navbar_link .last {
     padding-right: 0;
+}
+
+label, #toggle {
+    display: none;
 }
 
 /*********** Introduction ***********/
@@ -144,17 +149,18 @@ a {
 /*********** Picture ***********/
 
 .picture_wrapper {
-    margin: 0 -20rem;
+    margin: 0 -15rem;
     background-color: #eeeaf0;
-    height: 600px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 8rem 5rem;
+    flex-wrap: wrap;
 }
 
 .picture_wrapper img {
     object-fit: contain;
-    width: 30%;
+    width: 32%;
 }
 
 /*********** Objectif ***********/
@@ -163,7 +169,7 @@ h2 {
     text-transform: uppercase;
     font-size: 24px;
     color: #b010fb;
-    margin-top: 3rem;
+    margin-top: 6rem;
 }
 
 h3 {
@@ -186,6 +192,14 @@ h3 {
     font-weight: 700;
 }
 
+.project_navigation a {
+    transition: color 0.4s ease 0s;
+}
+
+.project_navigation a:hover {
+    color: #8C8C8C;
+}
+
 /*********** Contact section ***********/
 
 .footer {
@@ -202,21 +216,22 @@ h3 {
     padding-top: 15px;
     padding-bottom: 3rem;
     color: #fff;
+    text-transform: none;
 }
 
 .contact_wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 2rem 5rem 5rem 5rem;
+    padding: 0 5rem 5rem 5rem;
 }
 
-.footer-contact {
+.footer-icon {
     display: flex;
     justify-content: center;
     gap: 3rem;
 }
 
-.footer-contact .icon_wrapper {
+.footer-icon .icon_wrapper {
     border: 1px solid #fff;
 }
 
@@ -230,4 +245,163 @@ h3 {
 
 .fa-heart {
     color: #ff285c;
+}
+
+/*********** Media queries ***********/
+
+/* Large devices (desktop, less/equal than 1440px) */
+@media (max-width: 1440px) {
+    .main_wrapper {
+        padding: 0 10rem;
+    }
+
+    /*********** Picture ***********/
+    .picture_wrapper {
+        margin: 0 -15rem;
+    }
+}
+
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1024px) {
+    .app-container {
+        font-size: 16px;
+    }
+
+    .main_wrapper {
+        padding: 0 3rem;
+    }
+
+    /*********** Introduction ***********/
+    .main_wrapper h1 {
+        font-size: 2.7rem;
+        margin-top: 5rem;
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+    }
+
+    /*********** Picture ***********/
+    .picture_wrapper {
+        margin: 0 -8rem;
+        padding: 5rem 5rem
+        /* flex-direction: column;
+        gap: 2rem; */
+    }
+    
+    /* .picture_wrapper img {
+        width: 100%;
+    } */
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .app-container {
+        padding: 0 1rem;
+    }
+
+    .main_wrapper {
+        padding: 0;
+    }
+
+    .main_wrapper h1 {
+        font-size: 2rem;
+    }
+
+    /*********** Header section ***********/
+    .navbar {
+        flex-direction: row-reverse;
+    }
+
+    .navbar_link {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, .6);
+        backdrop-filter: blur(40px);
+        align-items: center;
+        position: absolute;
+        top: 3.5rem;
+        right: 0;
+        border-radius: 20px;
+        z-index: 101;
+    }
+
+    .header:has(#toggle:checked) {
+        backdrop-filter: none;
+    }
+
+    .navbar_link .nav-text {
+        padding-right: 0;
+        padding: 1rem;
+    }
+    
+    label {
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+    
+    #toggle:checked ~ .navbar_link {
+        display: flex;
+    }
+
+    /*********** Introduction ***********/
+    .introduction-stack {
+        flex-wrap: wrap;
+        font-size: 14px;
+    }
+
+    /*********** Picture ***********/
+    .picture_wrapper {
+        margin: 0 -1rem;
+        padding: 4rem 1rem;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .picture_wrapper img {
+        width: 100%;
+    }
+
+    /*********** Objectif ***********/
+
+    h2 {
+    font-size: 1.4rem;
+    }
+
+    h3 {
+    font-size: 1.2rem;
+    }
+
+    /*********** Contact section ***********/
+
+    .footer {
+        margin: 0 -1rem;
+    }
+
+    .footer h2 {
+        font-size: 48px;
+        padding-bottom: 3.5rem;
+    }
+
+    .contact_wrapper {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 0 5rem 0;
+    }
+
+    .copyright-allright {
+        order: 2;
+        margin-top: 2rem;
+        font-size: 14px;
+    }
+
+    .madewith {
+        order: 1;
+        margin-top: 3rem;
+    }
+
 }
