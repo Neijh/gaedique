@@ -96,6 +96,21 @@ h3 {
     font-size: 36px;
 }
 
+.more_btn {
+    color: #ff285c;
+    font-weight: 700;
+    background-color: rgba(0, 0, 0, 0);
+    border: 3px, solid, #ff285c;
+    border-radius: 31px;
+    padding: 16px 24px;
+    transition: color .3s cubic-bezier(.47, 0, .745, .715), background-color .3s cubic-bezier(.47, 0, .745, .715);
+}
+
+.more_btn:hover {
+    color: #fff;
+    background-color: #ff285c;
+}
+
 .nice_wrapper {
     border: .5px solid rgba(255, 228, 232, .8);
     border-radius: 6px;
@@ -118,7 +133,7 @@ h3 {
 .hero_wrapper {
     position: relative;
 /* A effacer si img retrécie */
-    margin-bottom: 58rem;
+    margin-bottom: 32rem;
 }
 
 .slogan {
@@ -149,9 +164,9 @@ h3 {
 }
 
 .hero_text {
-    position: relative;
     top: 24rem;
-    left: 50rem;
+    margin-top: 24rem;
+    margin-left: 50rem;
     width: 40%;
 }
 
@@ -424,7 +439,7 @@ h4 {
 
     /*********** Hero section ***********/
     .hero_wrapper {
-        margin-bottom: 47rem;
+        margin-bottom: 25rem;
     }
 
     .slogan {
@@ -437,8 +452,8 @@ h4 {
     }
 
     .hero_text {
-        top: 19rem;
-        left: 38rem;
+        margin-top: 19rem;
+        margin-left: 38rem;
     }
 
     .hero_text-title {
@@ -470,7 +485,7 @@ h4 {
 
     /*********** Hero section ***********/
     .hero_wrapper {
-        margin-bottom: 38rem;
+        margin-bottom: 20rem;
     }
 
     .slogan {
@@ -483,8 +498,8 @@ h4 {
     }
 
     .hero_text {
-        top: 18rem;
-        left: 31rem;
+        margin-top: 18rem;
+        margin-left: 31rem;
     }
 
     .hero_text-title {
@@ -559,7 +574,7 @@ h4 {
 
     /*********** Hero section ***********/
     .hero_wrapper {
-        margin-bottom: 41rem;
+        margin-bottom: 5rem;
     }
 
     .slogan {
@@ -568,15 +583,18 @@ h4 {
     }
 
     .hero-img {
+        position: relative;
         width: 95%;
-        top: 10rem;
+        margin: 0 auto;
+        margin-top: 2rem;
+        top: 0;
     }
 
     .hero_text {
-        top: 38rem;
-        left: 50%;
+        margin-top: 2rem;
+        margin-left: 0;
+        text-align: center;
         width: 100%;
-        transform: translate(-50%, 0);
     }
 
     .hero_text-title {
