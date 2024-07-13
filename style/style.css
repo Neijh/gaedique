@@ -517,7 +517,7 @@ h3 {
 
     .stack_wrapper {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, 1fr);
+        grid-template-rows: repeat(2, 1fr);
     }
 
     /*********** Footer section ***********/
